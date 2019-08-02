@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
   resources :games, only: [:index, :show, :create, :update]
+  #  resources :games, only: %w[:index :show :create :update]     %w make it into an array
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
